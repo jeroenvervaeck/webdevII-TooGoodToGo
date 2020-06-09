@@ -1,0 +1,43 @@
+// contact
+.o-contactpage {
+
+    h1 {
+        color: $green;
+    }
+
+    .o-contactform {
+        font-size: 16px;
+
+        input, textarea, button {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 5px ;
+            padding: 1rem;
+            font-size: 1rem;
+            font-family: $font-family-sans-serif;
+        }
+    }
+}
+
+
+// nieuwsletter
+.o-nieuwsletterpage {
+    h1 {
+        color: $green;
+    }
+
+    .o-nieuwsletterform {
+        font-size: 16px;
+
+        input, button {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 5px ;
+            padding: 1rem;
+            font-size: 1rem;
+            font-family: $font-family-sans-serif;
+        }
+    }
+}

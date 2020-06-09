@@ -1,0 +1,15 @@
+footer {
+    background-color: $green;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+
+    p {
+        padding: 0 20px;
+        color: $white;
+    }
+}

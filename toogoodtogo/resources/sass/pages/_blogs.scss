@@ -1,0 +1,94 @@
+// INDEX
+.o-blogspage {
+    h1 {
+        color: $green;
+    }
+    h2 {
+        color: $gray;
+        padding-bottom: 80px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .a-add {
+        color: $white;
+        background-color: $green;
+        width: 20%;
+        box-shadow: 0px 10px 8px -2px rgba(235,235,235,0.66);
+        margin: auto;
+        text-align: center;
+        padding: 20px 30px;
+        border-radius: 5px;
+    }
+
+    .m-blog {
+        border: $green solid 2px;
+        border-radius: 5px;
+        padding: 0 50px;
+        margin: 20px 0;
+        box-shadow: 0px 10px 8px -2px rgba(235,235,235,0.66);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+
+        &__left {
+            width: 50%;
+            h1, p {
+                color: $darkgray;
+            }
+        }
+
+        &__right {
+            width: 50%;
+            text-align: center;
+
+        }
+    }
+
+    .a-date {
+        text-align: right;
+        color: $darkgray;
+    }
+
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 0 10px;
+            a {
+                color: $gray;
+            }
+            span {
+                color: $darkgray;
+            }
+        }
+    }
+}
+
+// ADD
+.o-blogaddpage {
+    h1 {
+        color: $green;
+    }
+
+    .o-blogaddform {
+        font-size: 16px;
+
+        input, textarea, button {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 5px ;
+            padding: 1rem;
+            font-size: 1rem;
+            font-family: $font-family-sans-serif;
+        }
+    }
+}

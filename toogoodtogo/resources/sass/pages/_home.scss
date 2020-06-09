@@ -1,0 +1,48 @@
+.o-homepage {
+
+    .m-homepage {
+
+        &__top {
+            width: 100%;
+            text-align: center;
+            padding-top: 60px;
+            img {
+                margin-top: 80px;
+                width: 80%;
+                height: auto;
+            }
+            h1 {
+                color: $darkgray;
+                font-size: 50px;
+            }
+        }
+
+
+        &__bot {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 100px;
+            &-left {
+                width: 60%;
+                h1 {
+                    color: $green;
+                    font-size: 40px;
+                }
+                p {
+                    color: $darkgray;
+                    padding-right: 40px;
+                }
+            }
+
+            &-right {
+                width: 40%;
+                height: 100%;
+               img {
+                   object-fit: cover;
+                   width: 100%;
+                   height: 250px;
+               }
+            }
+        }
+    }
+}
