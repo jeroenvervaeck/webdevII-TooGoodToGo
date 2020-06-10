@@ -81,7 +81,7 @@ class PageController extends Controller
     }
 
     public function getSuccess() {
-        dd('ed betaling is verwerkt');
+        dd('de betaling is verwerkt');
     }
 
     public function postDonation(Request $r) {

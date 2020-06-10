@@ -7,6 +7,54 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Docs 
+
+Na klonen volgende commando's uitvoeren:
+
+`composer install`
+`npm install`
+
+Maak een .env-file aan, en vul volgende gegevens in:
+
+`APP_NAME=TooGoodToG`
+
+`MAILCHIMP_APIKEY=`
+`MAILCHIMP_LIST_ID=`
+
+`MOLLIE_KEY=`
+
+`DB_CONNECTION=mysql`
+`DB_HOST=`
+`DB_PORT=`
+`DB_DATABASE=toogoodtogo`
+`DB_USERNAME=`
+`DB_PASSWORD=`
+
+`MAIL_MAILER=smtp`
+`MAIL_HOST=smtp.office365.com`
+`MAIL_PORT=587`
+`MAIL_USERNAME=`
+`MAIL_PASSWORD=`
+`MAIL_ENCRYPTION=tls`
+`MAIL_FROM_ADDRESS=`
+`MAIL_FROM_NAME="${APP_NAME}"`
+
+Migreer de database
+
+`php artisan migrate`
+
+Vul de database met data
+
+`php artisan db:seed`
+
+Setup van ngrok tunnel voor gebruik van mollie:
+
+! plaats een ngrok-file in de root van het project !
+
+`./ngrok authtoken YOURTOKEN`
+
+`./ngrok http YOURLOCALHOST`
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
