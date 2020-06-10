@@ -11,33 +11,37 @@
 
 ### Na klonen volgende commando's uitvoeren:
 
-`composer install`
-`npm install`
+```
+composer install
+npm install
+```
 
 ### Maak een .env-file aan, en vul volgende gegevens in:
 
-`APP_NAME=TooGoodToG`
+```
+APP_NAME=TooGoodToG
 
-`MAILCHIMP_APIKEY=`
-`MAILCHIMP_LIST_ID=`
+MAILCHIMP_APIKEY=
+MAILCHIMP_LIST_ID=
 
-`MOLLIE_KEY=`
+MOLLIE_KEY=
 
-`DB_CONNECTION=mysql`
-`DB_HOST=`
-`DB_PORT=`
-`DB_DATABASE=toogoodtogo`
-`DB_USERNAME=`
-`DB_PASSWORD=`
+DB_CONNECTION=mysql
+DB_HOST=
+DB_PORT=
+DB_DATABASE=toogoodtogo
+DB_USERNAME=
+DB_PASSWORD=
 
-`MAIL_MAILER=smtp`
-`MAIL_HOST=smtp.office365.com`
-`MAIL_PORT=587`
-`MAIL_USERNAME=`
-`MAIL_PASSWORD=`
-`MAIL_ENCRYPTION=tls`
-`MAIL_FROM_ADDRESS=`
-`MAIL_FROM_NAME="${APP_NAME}"`
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.office365.com`
+MAIL_PORT=587`
+MAIL_USERNAME=`
+MAIL_PASSWORD=`
+MAIL_ENCRYPTION=tls`
+MAIL_FROM_ADDRESS=`
+MAIL_FROM_NAME="${APP_NAME}"
+```
 
 ### Migreer de database
 
