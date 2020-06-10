@@ -8,6 +8,7 @@
 <ul>
     <li><a href="/admin/index">blogs</a></li>
     <li><a href="/admin/donations/index">donations</a></li>
+    <li><a href="/admin/mailchimp/index">Mailchimp API key</a></li>
 </ul>
 
 

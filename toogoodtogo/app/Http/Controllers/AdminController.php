@@ -53,4 +53,36 @@ class AdminController extends Controller
         ]);
     }
 
+    // MAILCHIMP
+    public function getIndexMailchimp() {
+
+        $apikey = env('MAILCHIMP_APIKEY');
+        $id = env('MAILCHIMP_LIST_ID');
+
+        return view('admin.mailchimp', [
+            'apikey' => $apikey,
+            'listid' => $id,
+        ]);
+    }
+
+    public function getEditApikey($apikey) {
+        return view('admin.editApikey', [
+            'apikey'=>$apikey,
+        ]);
+    }
+
+    public function getEditListid($listid) {
+        return view('admin.editListid', [
+            'listid'=>$listid,
+        ]);
+    }
+
+    public function postEditApikey($apikey, Request $r) {
+
+        $apikey = $r->apikey;
+
+        return redirect()->route('admin.mailchimp');
+    }
+
+
 }

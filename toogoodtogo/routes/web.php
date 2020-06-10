@@ -57,10 +57,21 @@ Route::get('/admin', 'AdminController@admin')->name('admin');
 
 Route::get('/admin/index', 'AdminController@index')->name('admin.index');
 Route::get('/admin/edit/{blog}', 'AdminController@getEdit')->name('admin.edit');
+
 Route::post('/admin/save/{blog}', 'AdminController@postEdit')->name('admin.save');
+
 Route::get('/admin/delete/{id}', 'AdminController@postDelete')->name('admin.delete');
 
 Route::get('/admin/donations/index', 'AdminController@getIndexDonations')->name('admin.donations');
+
+
+Route::get('/admin/mailchimp/index', 'AdminController@getIndexMailchimp')->name('admin.mailchimp');
+
+Route::get('/admin/mailchimp/edit/{apikey}', 'AdminController@getEditApikey')->name('admin.editApikey');
+Route::get('/admin/mailchimp/edit/{listid}', 'AdminController@getEditListid')->name('admin.editListid');
+
+Route::post('/admin/mailchimp/save/{apikey}', 'AdminController@postEditApikey')->name('admin.saveApikey');
+Route::post('/admin/mailchimp/save/{listid}', 'AdminController@postEditListid')->name('admin.saveListid');
 
 
 
