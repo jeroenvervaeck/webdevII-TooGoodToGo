@@ -1,7 +1,7 @@
-<p align="center">
+
 <img src="https://toogoodtogo.be/images/logo/econ-horizontal-texted.svg" width="400">
 <h1>Jeroen Vervaeck - Webdevelopment 2</h1>
-</p>
+
 
 
 
